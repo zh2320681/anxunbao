@@ -3,11 +3,7 @@ package com.axb.android.service;
 import android.content.Context;
 import android.widget.Toast;
 
-import com.alibaba.fastjson.JSON;
-import com.axb.android.dto.CaseQuestion;
 import com.axb.android.dto.Result;
-import com.axb.android.ui.AnguiStudyActivity;
-import com.axb.android.ui.CaseStudyActivity;
 import com.axb.android.ui.FileStudyActivity;
 
 public class FileTask extends BaseAsyncTask {

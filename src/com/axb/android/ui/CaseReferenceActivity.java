@@ -12,7 +12,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import cn.tt100.base.util.rest.ZWAsyncTask;
+import cn.shrek.base.util.rest.ZWAsyncTask;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
@@ -88,7 +88,7 @@ public class CaseReferenceActivity extends BaseActivity {
 	 */
 	private void requestCaseReference() {
 		ZWAsyncTask
-				.excuteTaskWithOutMethod(
+				.excuteTaskWithParas(
 						CaseReferenceActivity.this,
 						Command.getRestActionUrl(Command.COMMAND_CASE_REFERENCE),
 						new TypeReference<BaseResult>() {

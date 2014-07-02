@@ -2,7 +2,7 @@ package com.axb.android.ui;
 
 import android.os.Bundle;
 import android.view.Window;
-import cn.tt100.base.ZWActivity;
+import cn.shrek.base.ui.ZWActivity;
 
 import com.axb.android.MyApplication;
 

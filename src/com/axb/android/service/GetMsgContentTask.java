@@ -3,9 +3,6 @@ package com.axb.android.service;
 import android.content.Context;
 
 import com.axb.android.dto.Result;
-import com.axb.android.ui.AnguiStudyActivity;
-import com.axb.android.ui.CaseStudyActivity;
-import com.axb.android.ui.FileStudyActivity;
 import com.axb.android.ui.MessageInfoActivity;
 import com.axb.android.util.CommonUtil;
 

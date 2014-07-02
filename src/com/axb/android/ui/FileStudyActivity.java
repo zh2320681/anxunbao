@@ -1,8 +1,9 @@
 package com.axb.android.ui;
 
+import java.util.Date;
+
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -17,7 +18,6 @@ import com.axb.android.service.Command;
 import com.axb.android.service.FileTask;
 import com.axb.android.service.GetCaseContentTask;
 import com.axb.android.util.CommonUtil;
-import com.axb.android.util.LoadPaperUtil;
 
 public class FileStudyActivity extends BaseActivity {
 	private Button backBtn;
@@ -142,6 +142,8 @@ public class FileStudyActivity extends BaseActivity {
 		} else if(answerFlag == SelfListActivity.DAILY_FLAG){
 			//将每日一题设置已经学习
 			mApplication.mLoginUser.noStudyDays = 0;
+			mApplication.mLoginUser.lastStudyTime = new Date();
+			mApplication.mLoginUser.dailyStudyCount++;
 		}
 		
 		finish();

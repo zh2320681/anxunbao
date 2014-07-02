@@ -1,7 +1,7 @@
 package com.axb.android.service;
 
-import cn.tt100.base.util.rest.DialogTaskHandler;
-import cn.tt100.base.util.rest.ZWResult;
+import cn.shrek.base.util.rest.DialogTaskHandler;
+import cn.shrek.base.util.rest.ZWResult;
 
 import com.axb.android.dto.BaseResult;
 
@@ -19,7 +19,12 @@ public abstract class MyDialogTaskHandler<T extends BaseResult> extends DialogTa
 		// TODO Auto-generated method stub
 		BaseResult mBaseResult = arg0.bodyObj;
 		if(mBaseResult == null || !mBaseResult.isSuccess()){
-			showNormalError(false, this.title, "请求服务器端数据出错啦！");
+			if(mBaseResult.errmessage.contains("com")
+					|| mBaseResult.errmessage.contains("cn")){
+				mBaseResult.errmessage = "请求服务器端数据出错啦！";
+			}
+			
+			showNormalError(false, this.title, mBaseResult.errmessage);
 			return;
 		}
 //		arg0.bodyObj.mineData = JSON.parseObject(arg0.bodyObj.data, parseClazz);

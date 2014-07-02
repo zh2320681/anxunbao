@@ -5,15 +5,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
-import cn.tt100.base.util.rest.ZWAsyncTask;
+import cn.shrek.base.util.rest.ZWAsyncTask;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
 import com.axb.android.R;
 import com.axb.android.dto.BaseResult;
 import com.axb.android.dto.SelfstudyNum;
-import com.axb.android.dto.User;
 import com.axb.android.service.Command;
 import com.axb.android.service.MyDialogTaskHandler;
 import com.axb.android.util.CommonUtil;
@@ -107,7 +105,7 @@ public class SelfMainActivity extends BaseActivity {
 	 */
 	private void initDataNum() {
 		
-		ZWAsyncTask.excuteTaskWithOutMethod(SelfMainActivity.this,
+		ZWAsyncTask.excuteTaskWithParas(SelfMainActivity.this,
 				Command.getRestActionUrl(Command.COMMAND_SELFSTUDY_NUM),
 				new TypeReference<BaseResult>(){}, new MyDialogTaskHandler<BaseResult>("请求自学数信息", "正在请求自学信息,请稍等..") {
 

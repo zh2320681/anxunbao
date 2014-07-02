@@ -2,7 +2,7 @@ package com.axb.android.dto;
 
 import java.util.List;
 
-import cn.tt100.base.ZWBo;
+import cn.shrek.base.ZWBo;
 
 public class BaseResult extends ZWBo {
 	public String success;

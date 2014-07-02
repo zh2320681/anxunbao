@@ -7,7 +7,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import cn.tt100.base.util.rest.ZWAsyncTask;
+import cn.shrek.base.util.rest.ZWAsyncTask;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
@@ -62,7 +62,7 @@ public class LoginActivity extends BaseActivity {
 	 */
 	private void login(String name, String pw) {
 
-		ZWAsyncTask.excuteTaskWithOutMethod(LoginActivity.this,
+		ZWAsyncTask.excuteTaskWithParas(LoginActivity.this,
 				Command.getRestActionUrl(Command.COMMAND_LOGIN),
 				 new TypeReference<BaseResult>(){}, new MyDialogTaskHandler<BaseResult>("请求登陆", "正在验证用户信息,请稍等..") {
 

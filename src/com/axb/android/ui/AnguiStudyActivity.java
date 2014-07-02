@@ -1,12 +1,12 @@
 package com.axb.android.ui;
 
 import java.lang.ref.WeakReference;
+import java.util.Date;
 import java.util.List;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.graphics.Color;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -337,6 +337,8 @@ public class AnguiStudyActivity extends BaseActivity {
 		}else if(answerFlag == SelfListActivity.DAILY_FLAG){
 			//将每日一题设置已经学习
 			mApplication.mLoginUser.noStudyDays = 0;
+			mApplication.mLoginUser.lastStudyTime = new Date();
+			mApplication.mLoginUser.dailyStudyCount++;
 		}
 		
 		//自动跳到答案页面

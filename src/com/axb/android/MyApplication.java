@@ -3,8 +3,8 @@ package com.axb.android;
 import org.apache.http.params.CoreConnectionPNames;
 import org.springframework.http.HttpMethod;
 
-import cn.tt100.base.ZWApplication;
-import cn.tt100.base.util.rest.ZWRequestConfig;
+import cn.shrek.base.ZWApplication;
+import cn.shrek.base.util.rest.ZWRequestConfig;
 
 import com.axb.android.dto.User;
 import com.axb.android.service.Command;

@@ -2,8 +2,6 @@ package com.axb.android.util.load;
 
 import java.io.File;
 
-import android.content.Context;
-
 public class FileCache {
 	private File cacheDir;
 	

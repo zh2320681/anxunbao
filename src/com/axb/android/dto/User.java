@@ -2,8 +2,8 @@ package com.axb.android.dto;
 
 import java.util.Date;
 
-import cn.tt100.base.annotation.DatabaseField;
-import cn.tt100.base.annotation.DatabaseTable;
+import cn.shrek.base.annotation.DatabaseField;
+import cn.shrek.base.annotation.DatabaseTable;
 
 @DatabaseTable(tableName="_USER")
 public class User extends Ranking{

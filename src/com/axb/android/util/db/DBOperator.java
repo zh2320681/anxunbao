@@ -5,9 +5,9 @@ import java.util.List;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-import cn.tt100.base.ormlite.ZWDBHelper;
-import cn.tt100.base.ormlite.dao.DBDao;
-import cn.tt100.base.ormlite.stmt.QueryBuilder;
+import cn.shrek.base.ormlite.ZWDBHelper;
+import cn.shrek.base.ormlite.dao.DBDao;
+import cn.shrek.base.ormlite.stmt.QueryBuilder;
 
 import com.axb.android.dto.CaseDto;
 import com.axb.android.dto.DepartmentRanking;

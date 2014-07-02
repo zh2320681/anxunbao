@@ -15,7 +15,6 @@ import com.axb.android.dto.Result;
 import com.axb.android.exception.CallJSONException;
 import com.axb.android.exception.CallServiceException;
 import com.axb.android.exception.NetworkAvailableException;
-import com.axb.android.ui.BaseActivity;
 
 public abstract class BaseAsyncTask extends AsyncTask<BaseBo, Integer, Result> {
 	private static final String TAG = "BaseAsyncTask";

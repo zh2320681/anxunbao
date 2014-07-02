@@ -7,10 +7,7 @@ import android.content.Context;
 import com.alibaba.fastjson.JSON;
 import com.axb.android.dto.AnLiJianShang;
 import com.axb.android.dto.Result;
-import com.axb.android.dto.SelfstudyNum;
 import com.axb.android.ui.CaseReferenceActivity;
-import com.axb.android.ui.SelfListActivity;
-import com.axb.android.ui.SelfMainActivity;
 
 public class CaseReferenceTask extends BaseAsyncTask {
 

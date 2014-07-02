@@ -1,6 +1,6 @@
 package com.axb.android.dto;
 
-import cn.tt100.base.ZWBo;
+import cn.shrek.base.ZWBo;
 
 public class SelfstudyNum extends ZWBo {
 	public int angui_bd_count;// 安规学习（变电部分）

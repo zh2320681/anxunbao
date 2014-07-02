@@ -11,7 +11,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.http.converter.HttpMessageNotWritableException;
-import org.springframework.web.client.HttpMessageConverterExtractor;
 
 import com.alibaba.fastjson.JSON;
 

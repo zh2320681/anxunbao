@@ -19,11 +19,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import cn.tt100.base.annotation.AutoInitialize;
-import cn.tt100.base.annotation.AutoOnClick;
-import cn.tt100.base.ormlite.ZWDBHelper;
-import cn.tt100.base.ormlite.task.DBAsyncTask;
-import cn.tt100.base.util.rest.ZWAsyncTask;
+import cn.shrek.base.annotation.AutoInject;
+import cn.shrek.base.ormlite.task.DBAsyncTask;
+import cn.shrek.base.util.rest.ZWAsyncTask;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
@@ -49,26 +47,25 @@ public class RankingActivity extends BaseActivity {
 	private static final byte TASK_ORDER = 0x04;// 任务完成
 	private static final byte DAILY_ORDER = 0x05;// 每日一题
 
-	@AutoInitialize(idFormat = "ranking_?")
+	@AutoInject(idFormat = "ranking_?")
 	private TextView titleView;
 
-	@AutoInitialize(idFormat = "ranking_?")
-	@AutoOnClick(clickSelector = "mClick")
+	@AutoInject(idFormat = "ranking_?",clickSelector = "mClick")
 	private Button backBtn, teamBtn, perBtn, taskOkBtn, dailyCaseBtn,
 			mStudyBtn;
-	@AutoInitialize(idFormat = "ranking_?")
+	@AutoInject(idFormat = "ranking_?")
 	private LinearLayout topLayout;
 
-	@AutoInitialize(idFormat = "ranking_?")
+	@AutoInject(idFormat = "ranking_?")
 	private TextView mlistName;
 
-	@AutoInitialize(idFormat = "ranking_?")
+	@AutoInject(idFormat = "ranking_?")
 	private EditText searchInput;
 
-	@AutoInitialize(idFormat = "ranking_?")
+	@AutoInject(idFormat = "ranking_?")
 	private ImageView searchBtn;
 
-	@AutoInitialize(idFormat = "ranking_?")
+	@AutoInject(idFormat = "ranking_?")
 	private ListView mList;
 	private RankingAdapter mRankingAdapter;
 
@@ -220,7 +217,7 @@ public class RankingActivity extends BaseActivity {
 	 */
 	private void requestUserRanking() {
 		if (!hasLoadUserRanking) {
-			ZWAsyncTask.excuteTaskWithOutMethod(
+			ZWAsyncTask.excuteTaskWithParas(
 					this,
 					Command.getRestActionUrl(Command.COMMAND_USERS_RANKING),
 					new TypeReference<BaseResult>() {
@@ -419,7 +416,7 @@ public class RankingActivity extends BaseActivity {
 	 */
 	private void requestDepartRanking() {
 		if (!hasLoadDepartRanking) {
-			ZWAsyncTask.excuteTaskWithOutMethod(
+			ZWAsyncTask.excuteTaskWithParas(
 					this,
 					Command.getRestActionUrl(Command.COMMAND_DEPART_RANKING),
 					new TypeReference<BaseResult>() {
@@ -447,7 +444,7 @@ public class RankingActivity extends BaseActivity {
 	 */
 	private void requestSMDepartRanking() {
 		if (!hasLoadSMDepartRanking) {
-			ZWAsyncTask.excuteTaskWithOutMethod(
+			ZWAsyncTask.excuteTaskWithParas(
 					this,
 					Command.getRestActionUrl(Command.COMMAND_DEPART_RANKING),
 					new TypeReference<BaseResult>() {

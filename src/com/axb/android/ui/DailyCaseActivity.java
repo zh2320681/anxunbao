@@ -10,7 +10,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.axb.android.R;
-import com.axb.android.dto.User;
 import com.axb.android.util.CommonUtil;
 
 public class DailyCaseActivity extends BaseActivity {
@@ -96,7 +95,7 @@ public class DailyCaseActivity extends BaseActivity {
 	private void setCaseInfo() {
 		if (mApplication.mLoginUser.lastStudyTime == null) {
 			timeView.setText("你还没有学习过哦!");
-		} else {
+		} else { 
 			String studyTime = "已经连续学习"
 					+ mApplication.mLoginUser.dailyStudyCount + "天,";
 			String noStudyTime = "共有" + mApplication.mLoginUser.noStudyDays

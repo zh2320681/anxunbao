@@ -6,9 +6,7 @@ import android.content.Context;
 
 import com.alibaba.fastjson.JSON;
 import com.axb.android.dto.CaseDto;
-import com.axb.android.dto.MessageDto;
 import com.axb.android.dto.Result;
-import com.axb.android.ui.MessageListActivity;
 import com.axb.android.ui.StudyRecordActivity;
 
 public class RecordTask extends BaseAsyncTask {

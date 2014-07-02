@@ -1,7 +1,7 @@
 package com.axb.android.dto;
 
-import cn.tt100.base.ZWBo;
-import cn.tt100.base.annotation.DatabaseField;
+import cn.shrek.base.ZWBo;
+import cn.shrek.base.annotation.DatabaseField;
 /**
  * ≈≈––∞Ò ¿‡
  * @author shrek

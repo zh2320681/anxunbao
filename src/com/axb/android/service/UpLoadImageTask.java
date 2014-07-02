@@ -3,7 +3,6 @@ package com.axb.android.service;
 import java.io.DataOutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Date;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -11,9 +10,7 @@ import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
-import com.axb.android.MyApplication;
 import com.axb.android.ui.ImageOperatorActivity;
-import com.axb.android.util.CommonUtil;
 
 
 

@@ -2,7 +2,7 @@ package com.axb.android.ui;
 
 import java.util.List;
 
-import cn.tt100.base.util.rest.ZWAsyncTask;
+import cn.shrek.base.util.rest.ZWAsyncTask;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
@@ -37,7 +37,7 @@ public class DepartRankingActivity extends BaseActivity {
 	 */
 	private void requestUserRanking() {
 		if (!hasLoadUserRanking) {
-			ZWAsyncTask.excuteTaskWithOutMethod(
+			ZWAsyncTask.excuteTaskWithParas(
 					this,
 					Command.getRestActionUrl(Command.COMMAND_USERS_RANKING),
 					new TypeReference<BaseResult>(){},

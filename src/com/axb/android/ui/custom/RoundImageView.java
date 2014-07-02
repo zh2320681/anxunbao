@@ -1,8 +1,5 @@
 package com.axb.android.ui.custom;
 
-import com.axb.android.MyApplication;
-import com.axb.android.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -16,8 +13,10 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.NinePatchDrawable;
 import android.util.AttributeSet;
-import android.view.View;
 import android.widget.ImageView;
+
+import com.axb.android.MyApplication;
+import com.axb.android.R;
 
 /**
  * 圆形ImageView，可设置最多两个宽度不同且颜色不同的圆形边框。

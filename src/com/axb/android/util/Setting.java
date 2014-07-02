@@ -2,11 +2,11 @@ package com.axb.android.util;
 
 import java.io.File;
 
-import com.axb.android.service.Command;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+
+import com.axb.android.service.Command;
 
 /**
  * …Ë÷√¿‡

@@ -4,9 +4,9 @@ import java.io.Serializable;
 import java.lang.ref.WeakReference;
 import java.util.List;
 
-import cn.tt100.base.ZWBo;
-import cn.tt100.base.annotation.DatabaseField;
-import cn.tt100.base.annotation.DatabaseTable;
+import cn.shrek.base.ZWBo;
+import cn.shrek.base.annotation.DatabaseField;
+import cn.shrek.base.annotation.DatabaseTable;
 
 @DatabaseTable(tableName="caseDB")
 public class CaseDto extends ZWBo implements Serializable{

@@ -1,7 +1,6 @@
 package com.axb.android.ui;
 
 import java.io.File;
-import java.io.UnsupportedEncodingException;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -17,7 +16,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import cn.tt100.base.util.rest.ZWAsyncTask;
+import cn.shrek.base.util.rest.ZWAsyncTask;
 
 import com.alibaba.fastjson.TypeReference;
 import com.axb.android.R;
@@ -499,7 +498,7 @@ public class PersonInfoActivity extends BaseActivity {
 
 	private void updateUserSpecInfo(final String specialty) {
 		ZWAsyncTask
-				.excuteTaskWithOutMethod(
+				.excuteTaskWithParas(
 						this,
 						Command.getRestActionUrl(Command.COMMAND_SPECIALTY_COMMIT),
 						new TypeReference<BaseResult>() {
